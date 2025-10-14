@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas1</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        canvas {
+            border: 1px solid black;
+            transform: perspective(700px) rotateX(-10deg) rotateY(25deg);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas1" width="200" height="150"></canvas>
+    <script>
+        var canvas1 = document.querySelector('#canvas1');
+        var c = canvas1.getContext('2d');
+
+        c.fillStyle = "#2C3E50";
+        c.fillRect(20, 80, 30, 70);
+        c.fillRect(70, 60, 25, 90);
+        c.fillRect(110, 90, 35, 60);
+        c.fillRect(160, 70, 20, 80);
+
+        c.fillStyle = "#F39C12";
+        c.fillRect(25, 85, 6, 8);
+        c.fillRect(25, 100, 6, 8);
+        c.fillRect(25, 115, 6, 8);
+        c.fillRect(25, 130, 6, 8);
+
+        c.fillRect(35, 85, 6, 8);
+        c.fillRect(35, 100, 6, 8);
+        c.fillRect(35, 115, 6, 8);
+        c.fillRect(35, 130, 6, 8);
+    </script>
+</body>
+
+</html>
